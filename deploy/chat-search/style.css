@@ -1,0 +1,96 @@
+.chatMessageContainerOld {
+    position: relative;
+}
+
+.eraChatSearchToggle {
+    flex: 0 0 auto;
+    margin-left: 8px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    background: #689F38;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.eraChatSearchToggle:hover {
+    background: #5a8a2f;
+}
+
+.eraChatSearchPanel {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    margin-top: 6px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    padding: 6px 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.eraChatSearchAuthorFilter {
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    padding: 5px 6px;
+    font-size: 13px;
+    max-width: 140px;
+    outline: none;
+    background: #fff;
+}
+
+.eraChatSearchAuthorFilter:focus {
+    border-color: #689F38;
+}
+
+.eraChatSearchInput {
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 14px;
+    width: 220px;
+    outline: none;
+}
+
+.eraChatSearchInput:focus {
+    border-color: #689F38;
+}
+
+.eraChatSearchCounter {
+    font-size: 12px;
+    color: #888;
+    min-width: 40px;
+    text-align: center;
+}
+
+.eraChatSearchBtn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 15px;
+    color: #555;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+.eraChatSearchBtn:hover {
+    background: #f0f0f0;
+}
+
+.eraChatSearchMark {
+    background: #ffe58a;
+    color: inherit;
+    padding: 0;
+}
+
+.eraChatSearchMark.eraChatSearchCurrent {
+    background: #ff9800;
+    color: #fff;
+}

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+
+.env
+
+smart_test_UtilsService/
+
+.gigacode/
+
+max_state.json
+max_subscribers.json
+
+subscribers.json
+deploy/*.log
+deploy/chat-search/test.txt

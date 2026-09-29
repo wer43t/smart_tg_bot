@@ -1,0 +1,24 @@
+services:
+  bot:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${TG_OUTBOUND_PORT:-8091}:8091"
+    volumes:
+      - bot_data:/app/data
+
+  max_bot:
+    build: .
+    command: ["python", "main_max.py"]
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "${OUTBOUND_PORT:-8090}:8090"
+    volumes:
+      - bot_data:/app/data
+
+volumes:
+  bot_data:

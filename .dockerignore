@@ -1,0 +1,10 @@
+.venv
+__pycache__
+*.pyc
+.git
+.env
+subscribers.json
+smart_test_UtilsService
+.gigacode
+max_subscribers.json
+max_state.json
